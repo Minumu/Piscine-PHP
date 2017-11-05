@@ -1,0 +1,177 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+/*input{outline:none;width:174px;padding:8px 10px 7px;margin:0;border-radius:2px;border:1px solid #D5D5D5 ;color:#6D6D6D ;box-shadow:0 1px 2px rgba(236,236,236,1)inset;transition:all .1s ease-in;-webkit-transition:all .1s ease-in}*/
+
+body {
+    background-color: #505050;
+}
+
+.cont{
+    width: 72%;
+    margin:auto;
+}
+.header {
+    background-color: #909090;
+    width: 75%;
+    margin: 30px auto 0;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 9px 11px 20px black;
+}
+
+.day42 {
+    text-align: left;
+    margin-left: 0.5vw;
+    line-height: 8vw;
+}
+.day42 img{
+    vertical-align: middle;
+    width: 35%;
+}
+.loupe {
+    position: absolute;
+    width: 22%;
+    right: 0.5vw;
+    top: 0.45vw;
+}
+.reload {
+    position: absolute;
+    right: 0.5vw;
+    top: 0.5vw;
+}
+.reload img, .close img {
+    width: 1.3vw;
+    height: 1.3vw;
+}
+.close {
+    position: absolute;
+    right: 0.5vw;
+    bottom: 0.3vw;
+}
+.loupe img {
+    width: 90%;
+}
+
+.cont {
+    display: flex;
+}
+.sidebar1, .sidebar2 {
+    background-color: #909090;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 9px 11px 20px black;
+    padding: 10px 0;
+    height: 22.5vw;
+    flex: 1.85;
+}
+
+.sidebar1 li, .sidebar2 li {
+    margin: 0;
+}
+
+.side1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.side1 img{
+    width: 60%;
+}
+
+.center {
+    flex: 15;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cluster {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: solid 10px #909090;
+    border-radius: 10px;
+    box-shadow: 9px 11px 20px black;
+}
+
+.cluster img {
+    width: 100%;
+}
+
+.border {
+    border: 0.25vw solid red;
+}
+
+.side2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.side2 img{
+    width: 60%;
+}
+.brick {
+    min-height: 3vw;
+    background: url('resources/brick.jpg');
+    margin: 0 10px;
+}
+
+.form {
+    position: absolute;
+    border-radius: 10px;
+    padding: 20px 10px;
+    top: 38vw;
+    left: 10%;
+    width: 27%;
+    height: 13%;
+    background-color: #88ff89;
+}
+.form p {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.big {
+    font-size: 200%;
+}
+
+.shadow {
+    text-shadow: 5px 5px 5px red;
+
+}
+
+.italic {
+    font-style: italic;
+}
+
+.form form {
+    font-size: 12px;
+    margin-top: 3px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    font-size: 11px;
+    font-family: sans-serif;
+    background-color: #e8e9e7;
+    padding: 3px 6px;
+    letter-spacing: 1px;
+    border: 1px solid #bfc1bf;
+    /*box-shadow: 0.5px 0.5px grey,*/
+                /*-0.5px -0.5px grey;*/
+}
+
+.input_text {
+    box-shadow: -0.5px -0.5px grey;
+    line-height: 16px;
+}
+
+.input_text {
+    width: 80%;
+    margin-right: 3px;
+
+}
+

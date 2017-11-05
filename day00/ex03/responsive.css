@@ -1,0 +1,109 @@
+body {
+	font-size: 0.7vw;
+}
+
+.clearfix:after{content:'';display:block;clear:both}
+p {
+	margin: 0;
+}
+
+.weight p,.symbol p,.number p {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	max-width: 90%;
+	overflow: hidden;
+}
+
+.b1 {
+	display: block;
+	width:100%;
+}
+
+.blocks {
+	display: block;width:100%
+}
+
+.block,.block1 {
+	border-radius: 7%;
+	height: 4.2vw;
+	text-align: center;
+	float: left;
+	width: calc(5.5555555556% - 4px);
+	margin: 0 4px 4px 0;
+}
+
+.block1 {
+	background: white;
+}
+
+.weight {
+	text-align: right;
+	margin-right: 0.3vw;
+	margin-bottom: 0.5vw;
+	margin-top: 0.1vw;
+}
+
+.symbol {
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.9vw;
+}
+
+.number {
+	text-align: left;
+	margin-left: 0.3vw;
+	margin-top: 0.3vw;
+}
+
+.block.other {
+	background-color: yellowgreen;
+}
+
+.block.alkali {
+	background-color: darkorange;
+}
+
+.block.alkaline {
+	background-color: gold;
+}
+
+.block.transition {
+	background-color: darksalmon;
+}
+
+.block.post {
+	background-color: lightslategray;
+}
+
+.block.metalloids {
+	background-color: cadetblue;
+}
+
+.block.halogens {
+	background-color: cyan;
+}
+
+.block.noble {
+	background-color: cornflowerblue;
+}
+
+.block.lathanoids {
+	background-color: pink;
+}
+
+.block.actinoids {
+	background-color: plum;
+}
+.block.last {
+	margin-top: 20px;
+}
+
+.weight.inh p{
+	color: transparent;
+}
+
+.mendel {
+	margin-top: 20px;
+	text-align: center;
+}
