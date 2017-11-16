@@ -1,0 +1,14 @@
+
+<- Vertex ----------------------------------------------------------------------
+
+The Vertex Class simply offers a coordinate encapsulation and
+provides reading and writing assessors for the corresponding attributes.
+
+The Class’ constructor is waiting for an array. The following keys are required:
+’x’: x axis coordinate, mandatory.
+’y’: y axis coordinate, mandatory.
+’z’: z axis coordinate, mandatory.
+’w’: optional, by default is worth 1.0.
+’color’: optional, by default is worth a new instance of the color white.
+
+---------------------------------------------------------------------- Vertex ->
