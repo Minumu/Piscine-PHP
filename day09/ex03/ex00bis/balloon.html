@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloon</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			margin: auto;
+			border-radius: 50%; 
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="balloon"></div>
+<script>
+	$(document).ready(function() {
+		var colors = ["red", "green", "blue"];
+		var i = 0;
+		$('#balloon').click(function() {
+			var width = $('#balloon').outerWidth();
+			var height = $('#balloon').outerHeight();
+			console.log(width);
+			if (width >= 420) {
+				$('#balloon').css("width", "200px");
+				$('#balloon').css("height", "200px");
+			}
+			else {
+				$('#balloon').css("width", width + 10 + "px");
+				$('#balloon').css("height", height + 10 + "px");
+			}
+			i++;
+			if (i > 2)
+				i = 0;
+			$('#balloon').css("background", colors[i]);
+		});
+		$('#balloon').mouseleave(function() {
+			var width = $('#balloon').outerWidth();
+			var height = $('#balloon').outerHeight();
+			if (width <= 200) {
+				$('#balloon').css("width", "200px");
+				$('#balloon').css("height", "200px");
+			}
+			else {
+				$('#balloon').css("width", width - 5 + "px");
+				$('#balloon').css("height", height - 5 + "px");
+			}
+			i--;
+			if (i < 0)
+				i = 2;
+			$('#balloon').css("background", colors[i]);
+		});
+	});
+</script>
+</body>
+</html>

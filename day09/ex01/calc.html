@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+</head>
+<body>
+	<div id="calculator">
+		<input class="values" id="val1" type="text" name="value1">
+		<select id="operator">
+	 		<option value="add">+</option>
+	  		<option value="sub">-</option>
+	  		<option value="mult">*</option>
+	  		<option value="div">/</option>
+	  		<option value="mod">%</option>
+		</select>
+		<input class="values" id="val2" type="text" name="value2">
+		<input id="button" type="submit" name="button" value="Try me!">
+	</div>
+	<script>
+		var button = document.getElementById("button");
+		button.onclick = function() {
+			var val1 = document.getElementById("val1").value;
+			var val2 = document.getElementById("val2").value;
+			var op = document.getElementById("operator").value;
+			if ((val1.match(/^[0-9]+$/)) === null || (val2.match(/^[0-9]+$/) === null)) {
+				document.getElementById("val1").value = "";
+				document.getElementById("val2").value = "";
+				alert("Error :(");
+			}
+			else {
+				if (op === "add") {
+					console.log(parseInt(val1) + parseInt(val2));
+					alert(parseInt(val1) + parseInt(val2));
+				}
+				if (op === "sub") {
+					console.log(parseInt(val1) - parseInt(val2));
+					alert(parseInt(val1) - parseInt(val2));
+				}
+				if (op === "mult") {
+					console.log(parseInt(val1) * parseInt(val2));
+					alert(parseInt(val1) * parseInt(val2));
+				}
+				if (op === "div") {
+					if (parseInt(val2) === 0) {
+						console.log("It’s over 9000!");
+						alert("It’s over 9000!");
+					} else {
+						console.log(parseInt(val1) / parseInt(val2));
+						alert(parseInt(val1) / parseInt(val2));
+					}
+				}
+				if (op === "mod") {
+					if (parseInt(val2) === 0) {
+						console.log("It’s over 9000!");
+						alert("It’s over 9000!");
+					} else {
+						console.log(parseInt(val1) % parseInt(val2));
+						alert(parseInt(val1) % parseInt(val2));
+					}
+				}
+			}
+
+		}
+		setInterval(function() {
+			alert("Please, use me...")}, 30000);
+	</script>
+</body>
+</html>
