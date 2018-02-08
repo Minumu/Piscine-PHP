@@ -1,0 +1,2 @@
+This class created a map and places 2 ships and rocks on the field.
+It receives 2 arrays - $ship1, $ship2 where the coordinates of the ships are specified.
